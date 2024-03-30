@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADHAN</title>
+    <link rel="stylesheet" text="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+         <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text">
+          <h1>Hi,I'm <span>Madhan v</span></h1>
+         </div>
+        </div>
+    </div>
+<!-- --------about------------ -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="im.jpg"">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Software engineering is a dynamic field at the intersection of technology and problem-solving. Software engineers leverage their expertise in programming languages, development methodologies, and problem-solving skills to design, build, and maintain software applications that address specific needs and challenges.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming languages</span><br>C and Java</li>
+                        <li><span>Data analytics</span><br>Creating a dashboard using dataset in tableau</li>
+                        <li><span>Web development</span><br>web app developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021-2025</span><br>B.E(ECE) from panimalar Engineering College.</li>
+                        <li><span>2019-2021</span><br>H.S.C  from S.K.V Higher Secondary School.</li>
+                        <li><span>2018-2019</span><br>SSLC  from S.K.V Matriculation School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="phone (1).png">    madhanvadivel19@gmail.com</p>
+                <p><img src="email (1).png">     9384554071</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/madhan-vadivel-35a90b217/"><img src="linkedin.png" ></a> 
+                    <a href="https://www.instagram.com/madhan_is_here_?igsh=MXRtdW95ZmJiM2owZg=="><img src="instagram.png" ></a>
+
+                    
+                   
+                </div>
+                <a href="MADHAN RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                </div>
+                
+    </div>
+   <div class="copyright">
+    <p> copyright © madhan v </p>
+   </div>
+</div>
+<Script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents ");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</Script>
+</body>
+</html>
